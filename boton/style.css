@@ -1,0 +1,42 @@
+
+ .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+#studentName{
+    width: 100%;
+    height: 100%; 
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#StudentButton{
+
+    
+    width: 50%;
+    height: 50%; 
+        color: #db3e3e;
+        border: 6px solid #db3e3e;
+        border-radius:15px;
+        padding: 15px 25px;
+        font-size: 30px;
+        font-family: tahoma;
+        letter-spacing:5px;
+        cursor: pointer;
+        font-weight: bold;
+        filter: drop-shadow(0 0 15px #db3e3e) drop-shadow(0 0 50px #db3e3e) contrast(2) brightness(2);
+        transition: .5s;
+      }
+      
+      .button:hover {
+        
+        color: black;
+        background-color: #db3e3e;
+        filter: drop-shadow(0 0 20px #db3e3e) contrast(2) brightness(2);
+      }
+      

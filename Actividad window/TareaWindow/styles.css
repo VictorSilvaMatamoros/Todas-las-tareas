@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/6e2a753653d1d84ed3247d0acb075273d734269d_hq.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.elemento {
+    position: absolute;
+    width: 100px; 
+    height: auto;
+    animation: caida 4s linear infinite;
+}
+
+@keyframes caida {
+    0% {
+        top: -50px;
+        transform: scale(1); 
+    }
+    100% {
+        top: calc(100vh + 50px);
+        transform: scale(3.5); 
+    }
+}

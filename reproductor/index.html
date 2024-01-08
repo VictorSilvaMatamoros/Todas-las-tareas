@@ -1,0 +1,87 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Mi Reproductor de Música</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+      <div class="smoke"></div>
+
+      <div class="player">
+        <div class="player__controls">
+          <div
+            class="player__btn player__btn--medium"
+            id="previouus"
+            style="visibility: hidden"
+          >
+            <i class="fas fa-backward"></i>
+          </div>
+          <h5 class="player__title">playing now</h5>
+          <div class="player__btn player__btn--small">
+            <i class="fas fa-bars"></i>
+            <div class="song-list">
+              <ul>
+                <li><span class="song-name">Gatsu</span></li>
+                <li><span class="song-name">Behelit</span></li>
+                <li><span class="song-name">So Long</span></li>
+                <li><span class="song-name">Fear</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="player__album">
+          <img
+            src="img/desktop-wallpaper-guts-jaw-art.jpg"
+            alt="Portada del Álbum"
+            class="player__img">
+        </div>
+
+        <h2 class="player__artist">Banda sonora de Berserk - 4 Gatsu</h2>
+        <h3 class="player__song">Ivory</h3>
+
+        <div class="player__controls">
+          <div class="player__btn player__btn--medium" id="previous">
+            <i class="fas fa-backward"></i>
+          </div>
+          <div class="player__btn player__btn--medium blue" id="play">
+            <i class="fas fa-play play-btn"></i>
+            <i class="fas fa-pause pause-btn hide"></i>
+          </div>
+
+          <div class="player__btn player__btn--medium" id="next">
+            <i class="fas fa-forward"></i>
+          </div>
+        </div>
+
+        
+        <div>
+        <button id="loop" class="player__btn player__btn--small">Loop</button>
+      </div>
+
+
+        <div class="player__btn player__btn--small" id="random">
+          <i class="fas fa-random"></i>
+        </div>
+       
+
+        
+
+        <audio class="player__audio" controls id="audio">
+          <source src="song/gutstheme.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

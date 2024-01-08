@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "name": "Paco",
+      "age": 33
+    },
+    {
+      "name": "José",
+      "age": 22
+    },
+    {
+      "name": "María",
+      "age": 44
+    }
+  ]
+}

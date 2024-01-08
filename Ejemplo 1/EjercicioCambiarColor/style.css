@@ -1,0 +1,24 @@
+
+.lleno{
+	width: 100px;
+	height: 100px;
+	margin: 100px;
+	padding: 100px;
+	border: 1px solid black;
+}
+
+.SiColor{
+    width: 100px;
+	height: 100px;
+	margin: 100px;
+	padding: 100px;
+	border: 1px solid black;
+}
+
+.NoColor{
+    width: 1000px;
+	height: 1000px;
+	margin: 100px;
+	padding: 100px;
+	border: 1px solid black;
+}

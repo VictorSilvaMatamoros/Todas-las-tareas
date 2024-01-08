@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#clearColor{
+  filter: grayscale(100%);
+}
+
+#color-palette-container{
+  height: 100px;
+  display: flex;
+  gap: 50px;
+  margin: 20px;
+}
+
+#img-container{
+  padding: 10px;
+}
+
+.pincel-img{
+  height: 100%;
+  cursor: grab;
+}
+
+.random-img{
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.no-colored{
+  filter: grayscale(100%);
+}
+
+.grabbing{
+  cursor: grabbing;
+}
