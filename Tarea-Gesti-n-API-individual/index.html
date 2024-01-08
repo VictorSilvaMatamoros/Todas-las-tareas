@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Superhéroe App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+  <div id="heroes-container" class="d-flex justify-content-around flex-wrap mt-3"></div>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h1 class="text-center">¡Batalla de Superhéroes y Villanos!</h1>
+
+        <form id="superhero-form">
+          <div class="form-group">
+            <label for="hero1-input">Héroe 1:</label>
+            <input type="text" class="form-control" id="hero1-input" placeholder="Ingrese el nombre del héroe">
+          </div>
+          <div class="form-group">
+            <label for="hero2-input">Héroe 2:</label>
+            <input type="text" class="form-control" id="hero2-input" placeholder="Ingrese el nombre del villano">
+          </div>
+          <div class="form-group">
+            <button type="button" class="btn btn-primary" onclick="compararHeroes()">Comparar Héroes</button>
+            <!-- Nuevo botón Aleatorio -->
+            <button type="button" class="btn btn-secondary" onclick="seleccionarHeroeAleatorio()">Heroe aleatorio</button>
+            <!-- Nuevo botón Borrar Personajes -->
+            <button type="button" class="btn btn-danger" id="borrar-personajes-btn">Borrar de la base de datos</button>
+
+          </div>
+          <div> <a href="https://superheroapi.com/ids.html" target="_blank">Lista de héroes</a></div>
+        </form>
+        
+        <div id="comparision-result" class="mt-3 d-flex justify-content-between align-items-center "></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

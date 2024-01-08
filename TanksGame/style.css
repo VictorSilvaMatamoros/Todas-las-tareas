@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Tilt+Neon&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tilt Neon', cursive;
+}
+
+body{
+  background-image: url(images/fondoTanks.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#myCanvas {
+  background-color: red;
+  animation: neon 2s linear infinite;
+  border-radius: 15px;
+}
+
+
+#contador{
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  width: 500px;
+  height: 75px;
+  justify-content: space-evenly;
+  font-size: 24px;
+  align-items: center;
+  margin-bottom: 2rem;
+  animation: neon 2s linear infinite;
+  border-radius: 15px;
+}
+
+#contador #j1 {
+  color: blue;
+}
+
+#contador #j2 {
+  color: rgb(204, 0, 0);
+}
+
+#contador #secondsElement{
+  color: rgb(255, 255, 255  );
+  margin: 0 50px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+  background: #fff;
+  text-align: center;
+  width: 500px;
+  margin: 5rem auto;
+  font-size: 25px;
+  padding: 40px;
+  border-radius: 15px;
+  animation: neon 2s linear infinite, move 2s linear infinite;
+}
+
+.popup-content a {
+  color: rgba(0, 0, 0);
+}
+
+@keyframes neon {
+  0% {
+    box-shadow: 0 0 5px #8A2BE2, 0 0 20px #8A2BE2, 0 0 30px #8A2BE2;
+  }
+  50% {
+    box-shadow: 0 0 10px #8A2BE2, 0 0 40px #1E90FF, 0 0 60px #1E90FF;
+  }
+  100% {
+    box-shadow: 0 0 5px #8A2BE2, 0 0 20px #8A2BE2, 0 0 30px #8A2BE2;
+  }
+}
+
+
+
+@keyframes move {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+

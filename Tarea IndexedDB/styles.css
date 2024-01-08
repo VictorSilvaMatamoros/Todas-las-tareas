@@ -1,0 +1,49 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #757171;
+    color: #333;
+}
+
+#app {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#addNoteBtn, #deleteAllBtn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#addNoteBtn:hover, #deleteAllBtn:hover {
+    background-color: #2980b9;
+}
+
+.note {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.deleteNoteBtn {
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 18px;
+    float: right;
+    transition: color 0.3s ease-in-out;
+}
+
+.deleteNoteBtn:hover {
+    color: #c0392b;
+}
